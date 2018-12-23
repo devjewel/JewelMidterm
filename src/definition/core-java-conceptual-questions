@@ -1,10 +1,20 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
+
+A. Programming language is a formula language, which comprises a set of instructions used to produce
+    various kind of out put.
+
 What jdk contains or composed of and define each components?
-A.
-What is IDE?
+A. 1. The run time Interpeter. The defination of an interpeter is a person of a computer programer
+    that people who speak different languages can cmmunicate.
+    2. The applet viewer. Applet viewer is stand alone command line program from Sun to run Java
+    applet.
+    3. Debugger. Debugger the eclipse IDE java developer.
+
+
+
+WWhat is IDEA?
 A.
 What are the IDEs available in the market to support java?
 Explain the entire java life cycle.
