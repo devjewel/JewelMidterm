@@ -60,12 +60,34 @@ OOP Define:
 3.Inheritance
 
 What is Java Package and which package is imported by default?
+If you omit the package statement while writing the class definition, the class name
+is placed into the default package, which has no name. Java compiler
+automatically imports this package. Second, the java.lang package is imported implicitly.
+
 What is API? Name list of API that you have used so far.
-Does java support multiple inheritance, explain why or why not?
+Java application programming interface (API)
+
+tancDoes java support multiple inherie, explain why or why not?
+
 What is method overloading and when it happens?
+Method Overloading is a feature that allows a class to have more than one method
+having the same name, if their argument lists are different. It is similar to
+constructor overloading in Java, that allows a class to have more than one
+constructor having different argument lists.
+
 Explain exceptions in java and how to handle it.
+f an exception occurs within the try block, it is thrown. Your code can catch this exception (using
+catch block) and handle it in some rational manner. System-generated exceptions are automatically
+thrown by the Java run-time system. To manually throw an exception, use the keyword throw.
+
 What is static keyword in java? How it has been used in variables and methods ?
+The static keyword in Java is used for memory management mainly.These are class variables. They are variables declared outside of any methods, but within the class
+and as such exist for all methods in the class. ... Since x exists within the entire class, both methods
+can make use of it.
+
+
 What is final and how it has been used variables and methods?
+
 What is final, finally and finalize?
 What is a constructor ?
 Can we have multiple constructors in a class?
