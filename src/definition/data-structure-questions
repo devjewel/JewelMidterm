@@ -1,37 +1,104 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
+-> Data structure is a particular way of organizing and storing data in a computer so
+ that it can be accessed and modified efficiently. Data structure is a collection of data
+ values, the relationships among them, and the functions or operations that can be
+ applied to the data.
+
 What are the various operations that can be performed on different Data Structures?
+-> The basic operations that are performed on data structures are as follows:
+ Insertion: Insertion means addition of a new data element in a data structure.
+ Deletion: Deletion means removal of a data element from a data structure if it is found.
+
 List out the areas in which data structures are applied extensively?
+-> Compiler Design, Operating System, Database Management System, Statistical analysis package,
+ Numerical Analysis, Graphics, Artificial Intelligence, and Simulation.
+
 what is an Array?
+-> Array is a data structure.
+
 what is the difference between the Array and ArrayList?
+-> Array has fixed size and ArrayList can grow dynamically.
+
 what is LinkedList?
+-> Data structures composed of nodes containing next node address and data
+
 How is an Array different from Linked List?
+-> Same as Array vs. ArrayList.
+
 what is queue?
+-> It is a data structure that follow first in first out and last in last out which is
+ opposite of stack.
+
 what is stack?
+-> Stack is a data structure that follows FILO and LIFO.
+
 what is FIFO and LIFO?
+-> These are the short version for first in fisrst out and last in first out accordingly.
+
 what is the order of complexity?
+-> This means that it is a certain mathematical expression of the size of the input,
+ and the algorithm finishes between two factors of it.
+
 what is the best case to search an element from an array?
+-> If the elemnt that we are looking for is the first one in the array.
+
 what is the worst case to search an element from an array?
+-> If the element is located in at the end of the array.
+
 what is tree in data structure?
+-> Tree is a hierarchical non linear data structure
+
 what is graph in data structure?
+-> Graph data structure is composed of data, address and vertices.
+ This data structure optimises route.
+
 what is the difference between the HashTable and HashMap?
+-> HashTable is synchronized and does not accept null keys or values and HasMap is
+ unsynchronized and accepts null values null keys.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+->
 How HashMap works in java?
+-> HashMap in Java works on hashing principle. It is a data structure which allows us
+ to store object and retrieve it in constant time
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+-> It the exception for searching, inserting elments with index that are outside of the arrays
+ size. Occurs when such request are made.
+
 What are the different ways of copying an array into another array?
+-> Using for loops, array copy method from System class or clone() method from object class.
+
 What is difference between an array and a linked list?
+-> Array is like a container that holds data and linked list abstract.
+
 What is DFS and BFS?
+-> Depth first search and breadth first search are algorithms fro traversing and searching
+ in Graph data structure.
+
 What is Recursion?
+-> It is the process of the method calling itself.
+
 What are linear and non linear data Structures?
+-> In linear data structures data is organized in a sequential fashion meaning one is places
+ after the other. In non linear data placement is not sequential, one data can be connected to multiple other.
+
 What is Big-(O)-notation?
+-> It is the notation for representing the time complexity of the sorting algorithms.
+
 Outlined different kind of sorting algorithm with time complexity?
+-> Selection Sort, Merge Sort, Shell Sort, Insertion Sort. Bubble sort: Assumes the left most
+ item the larges and keeps comparing it to the elements on the right, upon finding larger
+ element it stops moving to the right and the newly found lager one does the same util the
+ largest value occupies the right most position. Bucket Sort. Quick Sort. Heap Sort.
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
   b)In terms of Inserting element.
   c)In terms of Searching element.
   d)In terms of Removing element.
+
 
 
