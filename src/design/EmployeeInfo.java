@@ -21,7 +21,30 @@ public class EmployeeInfo {
 	 * declare few static and final fields and some non-static fields
 	 */
 	static String companyName;
-	
+
+	int employeeId;
+	String name;
+	private String emgContac;
+
+	public String getEmgContac() {
+		return emgContac;
+	}
+
+	public void setEmgContac(String emgContac) {
+		this.emgContac = emgContac;
+	}
+
+
+	private int accnumber;
+
+	public int getAccnumber() {
+		return accnumber;
+	}
+
+	public void setAccnumber(int accnumber) {
+		this.accnumber = accnumber;
+	}
+
 	/*
 	 * You must implement the logic for below 2 methods and 
 	 * following 2 methods are prototype as well for other methods need to be design,
@@ -32,11 +55,12 @@ public class EmployeeInfo {
 	 * you must have multiple constructor.
 	 * Must implement below constructor.
 	 */
-	public EmployeeInfo(int employeeId){
-		
+	public EmployeeInfo(){
+		this.employeeId = employeeId;
 	}
-    public EmployeeInfo(String name, int employeeId){
-		
+	public EmployeeInfo(String name, int employeeId){
+		this.employeeId =employeeId;
+		this.name = name;
 	}
 	
 	/*
@@ -47,8 +71,21 @@ public class EmployeeInfo {
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
+	public static int calculateEmployeeBonus(int performance, int salary){
 		int total=0;
+
+
+		//logic has to written chech then in UnitTesting
+		if ( performance==100){
+			total+=(salary*10)/100;
+		}
+		else if (performance==80){
+			total+=(salary*8)/100;
+		}
+		else if (performance ==70){
+			total+=(salary*7)/100;
+		}else{total = total;}
+
 		return total;
 	}
 	
