@@ -15,9 +15,9 @@ public class ProcessStudentInfo {
 
 		/*
 		 * Under XmlReader class, the parseData() will return list of Student Info which will contain Student first name, last name and score.
-		 * You need to implement the method name "convertIntToChar()" which will convert String score into char Grade.('A'for 90 to 100,'B'for 80 to 89 and 
+		 * You need to implement the method name "convertIntToChar()" which will convert String score into char Grade.('A'for 90 to 100,'B'for 80 to 89 and
 		 * 'C' for 70 to 79.
-		 * 
+		 *
 		 * Here in the main method fill in the code that outlined to read xml data parsed into 2 separate ArrayList, then store into map. 
 		 * Once map has all data, retrieve those data and out put to console.
 		 *
@@ -59,21 +59,28 @@ public class ProcessStudentInfo {
 				seleniumStudents = xmlReader.parseData(tag, pathSelenium);
 
 				//Parse Data using parseData method and then store data into Qtp ArrayList.
+				qtpStudents = xmlReader.parseData(tag, pathQtp);
+
 				
 				//add Selenium ArrayList data into map.
+				list.put("Student_sel ", seleniumStudents);
 
 				//add Qtp ArrayList data into map.
-		
-		      	
-				//Retrieve map data and display output.
+				list.put("Student_qtp: ", qtpStudents);
 
+				//Retrieve map data and display output.
+				for (Map.Entry e : list.entrySet()){
+					//System.out.println(e.getKey() + ""+e.getValue());
+
+				}
 
 
 				//Store Qtp data into Qtp table in Database
-				connectToMongoDB.insertIntoMongoDB(seleniumStudents,"qtp");
+				connectToMongoDB.insertIntoMongoDB(qtpStudents,"qtp");
 				//connectToSqlDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
 
 				//Store Selenium data into Selenium table in Database
+				connectToMongoDB.insertIntoMongoDB(seleniumStudents, "selenium");
 
 				//Retrieve Qtp students from Database
                List<Student> stList = connectToMongoDB.readStudentListFromMongoDB("qtp");
@@ -82,6 +89,11 @@ public class ProcessStudentInfo {
 			   }
 
 			   //Retrieve Selenium students from Database
+				List<Student> sel = connectToMongoDB.readStudentListFromMongoDB("Selenium");
+               for (Student std : sel){
+				   System.out.println(std.getFirstName() + " " + std.getLastName() + " " + std.getScore() + std.getId());
+
+			   }
 
 
 			}
