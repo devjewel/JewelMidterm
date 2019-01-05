@@ -1,5 +1,8 @@
 package math.problems;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PrimeNumber {
 
 	public static void main(String[] args) {
@@ -13,9 +16,37 @@ public class PrimeNumber {
 		 *
 		 */
 
-
+		int counter = 0;
+		List<Integer> list = new ArrayList<>();
+		for (int i = 2; i < 1000000; i++) {
+			if (isPrime(i)) {
+				list.add(i);
+				System.out.println(i);
+				counter++;
 			}
 		}
+		try {
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("total number of prime numbers" + counter);
+		}
+
+
+	}
+
+	public static boolean isPrime(int number) {
+		if (number % 2 == 0) {
+			return false;
+
+		}
+		for (int i = 3; i * i <= number; i = i + 2) {
+			if (number % i == 0) {
+			}
+		}
+		return true;
+	}
+}
 
 
 
